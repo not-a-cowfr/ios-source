@@ -1,6 +1,15 @@
 <link rel="icon" href="/favicon.jpg" />
+
 <code id="url-copy"></code>
-<button onclick="navigator.clipboard.writeText(document.getElementById('url-copy').textContent)">Copy</button>
+<button
+  onclick="
+    navigator.clipboard.writeText(
+      document.getElementById('url-copy').textContent,
+    )
+  "
+>
+  Copy
+</button>
 <div id="actions"></div>
 
 <script>
@@ -8,8 +17,8 @@
 
   const ACTIONS = [
     { label: "Open in LiveContainer", scheme: "livecontainer://source?url=" },
-    { label: "Open in AltStore",      scheme: "altstore://source?url=" },
-    { label: "Open in Sidestore",     scheme: "sidestore://source?url=" },
+    { label: "Open in AltStore", scheme: "altstore://source?url=" },
+    { label: "Open in Sidestore", scheme: "sidestore://source?url=" },
   ];
 
   document.getElementById("url-copy").textContent = `https://${REPO_URL}`;

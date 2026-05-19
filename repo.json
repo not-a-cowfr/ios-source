@@ -3,9 +3,7 @@
   "iconURL": "https://ipa.notacow.fr/favicon.jpeg",
   "website": "https://ipa.notacow.fr",
   "tintColor": "#ffa9c5",
-  "featuredApps": [
-    "com.llsc12.Paicord"
-  ],
+  "featuredApps": ["com.llsc12.Paicord"],
   "apps": [
     {
       "name": "Paicord",
