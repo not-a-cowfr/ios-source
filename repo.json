@@ -1,0 +1,46 @@
+{
+  "name": "cow source",
+  "iconURL": "https://ipa.notacow.fr/favicon.jpeg",
+  "website": "https://ipa.notacow.fr",
+  "tintColor": "#ffa9c5",
+  "featuredApps": [
+    "com.llsc12.Paicord"
+  ],
+  "apps": [
+    {
+      "name": "Paicord",
+      "bundleIdentifier": "com.llsc12.Paicord",
+      "marketplaceID": "",
+      "developerName": "llsc12",
+      "subtitle": "A native Discord client.",
+      "localizedDescription": "",
+      "iconURL": "https://i.imgur.com/Q5R3Kyh.png",
+      "tintColor": "#faae49",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "downloadURL": "https://github.com/llsc12/Paicord/releases/download/paicord-nightly-25295216552/Paicord-iOS-f6daaec.ipa",
+          "size": 26100000,
+          "version": "nightly-25295216552",
+          "buildVersion": null,
+          "date": "2026-05-04T09:27:00-07:00",
+          "localizedDescription": null,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAccentColorName": "AccentColor",
+          "NSCameraUsageDescription": "le camera ykyk",
+          "NSMicrophoneUsageDescription": "Taking videos with le camera",
+          "NSMotionUsageDescription": "Camera autorotation",
+          "NSSpeechRecognitionUsageDescription": "Voice message transcriptions"
+        }
+      },
+      "patreon": {}
+    }
+  ],
+  "news": []
+}

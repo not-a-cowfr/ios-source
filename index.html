@@ -1,0 +1,24 @@
+<code id="url-copy"></code>
+<button onclick="navigator.clipboard.writeText(document.getElementById('url-copy').textContent)">Copy</button>
+<div id="actions"></div>
+
+<script>
+  const REPO_URL = "ipa.notacow.fr/repo.json";
+
+  const ACTIONS = [
+    { label: "Open in LiveContainer", scheme: "livecontainer://source?url=" },
+    { label: "Open in AltStore",      scheme: "altstore://source?url=" },
+    { label: "Open in Sidestore",     scheme: "sidestore://source?url=" },
+  ];
+
+  document.getElementById("url-copy").textContent = `https://${REPO_URL}`;
+
+  const container = document.getElementById("actions");
+  for (const { label, scheme } of ACTIONS) {
+    const a = document.createElement("a");
+    a.href = scheme + encodeURIComponent(`https://${REPO_URL}`);
+    a.textContent = label;
+    container.appendChild(a);
+    container.appendChild(document.createElement("br"));
+  }
+</script>
